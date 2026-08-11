@@ -12,9 +12,20 @@ body{
     font-family: "Staatliches" , sans-serif ;
     background-color: #0D0D0D;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
 
+main{
+    flex:1;
+}
 
+header{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -22,16 +33,30 @@ nav{
     padding:20px;
     background-color:#111111 ;
     height: 50px;
-    position: sticky;
-    top:0;
-    z-index: 1000;
+}
+
+.nav-links{
+    display: flex;
+    gap:30px;
+}
+
+.nav-links a:hover{
+    background-color: #B91C1C;
+    color:#0D0D0D;
+}
+
+.logo{
+
+    font-size: 30px;
+    font-style: italic;
+    color: #b91c1c;
+
 }
 
 a{
     text-decoration: none;
     color:inherit;
-    padding:8px;
-    
+    padding:8px;   
 }
 
 
@@ -43,19 +68,57 @@ ul{
     list-style: none;
 }
 
-.logo{
-
-    font-size: 30px;
-    font-style: italic;
-    color: #b91c1c;
-
-}
-
-.nav-links{
+.hero{
+    min-height: 100vh;
+    padding: 80px 20px;
     display: flex;
-    gap:30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.nav-links a:hover{
-    background-color: #B91C1C;
+.hero-content{
+    width:100%;
+    max-width: 700px;
+      
 }
+
+
+.hero-content h1{
+    color:#b91c1c;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-content h2{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.greeting{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.simple-introduction{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.button{
+
+    padding:20px;
+    background-color: #b91c1c;
+
+
+}
+
+.button:hover{
+    color:#0D0D0D;
+}
+
+.footer{
+    padding:20px;
+}
+
