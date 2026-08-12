@@ -30,7 +30,7 @@ The website introduces who I am, my background, current technical skills, projec
 - Responsive design for desktop, tablet, and mobile
 - Hover effects and interactive styling
 
-## 📸 Screenshots
+## Screenshots
 
 ### Hero Section
 
